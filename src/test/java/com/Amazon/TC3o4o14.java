@@ -1,8 +1,8 @@
 package com.Amazon;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
+import com.pages.*;
 
+import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -14,12 +14,15 @@ import org.openqa.selenium.WebElement;
 public class TC3o4o14 extends BrowserFunction{
 	String url = "https://rahulshettyacademy.com/seleniumPractise/#/";
 	String[] itemsNeeded = {"Cucumber","Brocolli","Beetroot"};
-  
+	Pagelocator PL;
 	
 	
 	@Test
   public void Step_1() {
+		
+	
 	  //test= extent.createTest("f");
+	  
 	  driver.get(url);
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -44,6 +47,8 @@ public class TC3o4o14 extends BrowserFunction{
 				//click on add to Cart
 				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
 				
+				
+			
 				//Incrementing counter
 				j++;
 				System.out.println(j);
@@ -62,14 +67,19 @@ public class TC3o4o14 extends BrowserFunction{
   
 @Test
 public void Step_2() throws InterruptedException {
+	PL = new Pagelocator(BrowserFunction.driver);
 	String url = "https://www.makemytrip.com/";
 	driver.get(url);
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
 	Thread.sleep(3000);
-	driver.findElement(By.xpath("//*[@id='root']//input[@id='fromCity']")).click();
-	WebElement source = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='From']"));
+	//driver.findElement(By.xpath("//*[@id='root']//input[@id='fromCity']")).click();
+	System.out.println("Before First Loca");
+	PL.FirstLoca().click();
+	System.out.println("After First Loca");
+	//WebElement source = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='From']"));
+	WebElement source = PL.SecondLoca();
 	//source.click();
 	//source.clear();
 	source.sendKeys("mum");
@@ -85,8 +95,14 @@ public void Step_2() throws InterruptedException {
 
 @Test
 public void Step_3() throws InterruptedException {
-	driver.findElement(By.xpath("//*[@id='root']//input[@id='toCity']//parent ::label/span")).click();
-	WebElement destination = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='To']"));
+	PL = new Pagelocator(BrowserFunction.driver);
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	//driver.findElement(By.xpath("//*[@id='root']//input[@id='toCity']//parent ::label/span")).click();
+	PL.ThirdLoca().click();
+	//WebElement destination = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='To']"));
+
+	WebElement destination = PL.FourthLoca();
+	
 	//destination.click();
 	//destination.clear();
 	destination.sendKeys("del");
