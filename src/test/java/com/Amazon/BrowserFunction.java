@@ -129,11 +129,13 @@ public class BrowserFunction extends TestInMethod {
 		// extent.createTest(result.getMethod().getConstructorOrMethod().getMethod().getName());
 		if (result.getStatus() == ITestResult.FAILURE) {
 			System.out.println("Test failed entering in Report");
-			test.log(Status.FAIL, MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test case FAILED due to below issues:",
-					ExtentColor.RED));
 			String issueDescription = result.getThrowable().getMessage();
 			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
-			test.fail(issueDescription);
+			
+			test.log(Status.FAIL, MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test case FAILED due to below issues: " + issueDescription,
+					ExtentColor.RED));
+			
+			//test.fail(issueDescription);
 			System.out.println(issueDescription);
 			
 			//Taking Screenshot of the test
