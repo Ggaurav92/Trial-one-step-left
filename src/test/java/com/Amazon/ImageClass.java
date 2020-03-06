@@ -141,7 +141,7 @@ public class ImageClass {
         FileOutputStream outStream = null;
         try {
             //double x = Math.random();
-            String fileName = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\" + Classname +"\\"+ FileNme + ".docx";
+            String fileName = "./WordDocs/" + Classname +"/"+ FileNme + ".docx";
             System.out.println(fileName);
             outStream = new FileOutputStream(fileName);
         } catch (FileNotFoundException e) {

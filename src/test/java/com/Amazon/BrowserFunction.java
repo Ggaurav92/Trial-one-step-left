@@ -1,12 +1,16 @@
 package com.Amazon;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.codehaus.plexus.util.ExceptionUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -20,6 +24,8 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+
+
 public class BrowserFunction extends TestInMethod {
 
 	public static WebDriver driver;
@@ -32,8 +38,14 @@ public class BrowserFunction extends TestInMethod {
 	ScreenShotClass SSh = new ScreenShotClass(driver);
 	
 	// path of TestScript excel file
-	static String fileName = "C:\\Users\\P10444427\\Desktop\\Trial Frame Project\\TestWorksheet.xlsx";
+	static String fileName = "./Test Data/TestWorksheet.xlsx";
 	static int i;
+	
+	
+	//Array for merging document
+    ArrayList<String> paths = new ArrayList<String>();
+	
+	
 
 	@BeforeSuite
 	public void initialioseBrowser() {
@@ -54,7 +66,7 @@ public class BrowserFunction extends TestInMethod {
 		htmlReporter.config().setReportName("Final Report");
 		System.out.println("Extent end");
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Training\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
@@ -75,7 +87,7 @@ public class BrowserFunction extends TestInMethod {
 		
 		//Creating folder for Screenshots
 		String NewFilename = cellContent2;
-		String path = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\Screenshot\\" + cellContent2;
+		String path = "./Screenshot/" + cellContent2;
 		//Creating a File object
 	    File file = new File(path);
 	    //Creating the directory
@@ -83,11 +95,14 @@ public class BrowserFunction extends TestInMethod {
 	    
 	    //Creating folder for Word Document
 	    //String Wordfilename = cellContent2;
-		String Wordpath = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\" + cellContent2;
+		String Wordpath = "./WordDocs/" + cellContent2;
 		//Creating a File object
 	    File wordfile = new File(Wordpath);
 	    //Creating the directory
 	    boolean wordbool = wordfile.mkdir();
+	    
+	    
+	  
 		
 	}
 
@@ -100,14 +115,14 @@ public class BrowserFunction extends TestInMethod {
 		// Gets the current TestNG class Name
 		String cellContent = this.getClass().getSimpleName();
 		String cellContent1 = cellContent.replace("TC", "");
-		String cellContent2 = cellContent1.replace("o", ".");
-		System.out.println(cellContent2);
+		String ClassName = cellContent1.replace("o", ".");
+		System.out.println(ClassName);
 		
-		System.out.println(cellContent2);
+		System.out.println(ClassName);
 		// Searches for the Class name in Excel and return step name
-		String StepName = ts.GetStepName(fileName, cellContent2, i, 7);
+		String StepName = ts.GetStepName(fileName, ClassName, i, 7);
 		// Searches for the Class name in Excel and returns description of step
-		String StepDescrip = ts.GetStepName(fileName, cellContent2, i, 8);
+		String StepDescrip = ts.GetStepName(fileName, ClassName, i, 8);
 		// Here we merge the step and description to be put in word
 		String merged = StepName + ": " + StepDescrip;
 		System.out.println(merged);
@@ -139,22 +154,22 @@ public class BrowserFunction extends TestInMethod {
 			System.out.println(issueDescription);
 			
 			//Taking Screenshot of the test
-			String Screenshotpath = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\Screenshot\\" + cellContent2 + "\\"+ MethodName + ".png";
+			String Screenshotpath = "./Screenshot/" + ClassName + "/"+ MethodName + ".png";
 			SSh.screencapture(driver, Screenshotpath);
 			String issueToWord = "Failure: " + issueDescription;
 			//Attaching screenshot in 
-			Im.ImageAttachClass(cellContent2,MethodName,StepName,StepDescrip,Screenshotpath,issueToWord);
+			Im.ImageAttachClass(ClassName,MethodName,StepName,StepDescrip,Screenshotpath,issueToWord);
 		
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			System.out.println("Test passed entering in report");
 			test.log(Status.PASS, MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test Case PASSED", ExtentColor.GREEN));
 		
 			//Taking Screenshot of the test
-			String Screenshotpath = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\Screenshot\\" + cellContent2 + "\\"+ MethodName + ".png";
+			String Screenshotpath = "./Screenshot/" + ClassName + "/"+ MethodName + ".png";
 			SSh.screencapture(driver, Screenshotpath);
 			
 			//Attaching screenshot in 
-			Im.ImageAttachClass(cellContent2,MethodName,StepName,StepDescrip,Screenshotpath,"");
+			Im.ImageAttachClass(ClassName,MethodName,StepName,StepDescrip,Screenshotpath,"");
 			
 			
 		} else {
@@ -163,10 +178,35 @@ public class BrowserFunction extends TestInMethod {
 			test.skip(result.getThrowable());
 		}
 		
-		
-		
+		 String fileName = "./WordDocs/" + ClassName +"/"+ MethodName + ".docx";
+		 paths.add(fileName);
 		System.out.println("At end of after method");
 	}
+	
+	@AfterClass
+	public void afterClass() throws Exception {
+		// Gets the current TestNG class Name
+		String cellContent = this.getClass().getSimpleName();
+		String cellContent1 = cellContent.replace("TC", "");
+		String ClassName = cellContent1.replace("o", ".");
+		
+		//String fileName = "./WordDocs/" + ClassName +"/"+ ClassName + ".docx";
+		String File2Path = "./WordDocs/" + ClassName +"/"+ ClassName + ".docx";
+		FileOutputStream faos = new FileOutputStream(File2Path);
+    	WordMerged wm =new WordMerged(faos);
+    	
+    	for(String InpStrm : paths) {
+            wm.add(new FileInputStream(InpStrm));	
+            }
+    	
+    	wm.doMerge();
+        wm.close();
+        
+        paths.clear();
+        
+        System.out.println("Sucessfully merged");
+	}
+	
 
 	@AfterSuite
 	public void closeBrowser() {
@@ -177,6 +217,7 @@ public class BrowserFunction extends TestInMethod {
 		driver.quit();
 		extent.flush();
 		System.out.println("Extent Flushed");
+		System.out.println("Test Ended");
 		ts.finish();
 	}
 
