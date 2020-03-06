@@ -32,7 +32,7 @@ public class BrowserFunction extends TestInMethod {
 	ScreenShotClass SSh = new ScreenShotClass(driver);
 	
 	// path of TestScript excel file
-	static String fileName = "C:\\Users\\P10444427\\Desktop\\Trial Frame Project\\TestWorksheet.xlsx";
+	static String fileName = "./Test Data/TestWorksheet.xlsx";
 	static int i;
 
 	@BeforeSuite
@@ -54,7 +54,7 @@ public class BrowserFunction extends TestInMethod {
 		htmlReporter.config().setReportName("Final Report");
 		System.out.println("Extent end");
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Training\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
@@ -75,7 +75,7 @@ public class BrowserFunction extends TestInMethod {
 		
 		//Creating folder for Screenshots
 		String NewFilename = cellContent2;
-		String path = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\Screenshot\\" + cellContent2;
+		String path = "./Screenshot/" + cellContent2;
 		//Creating a File object
 	    File file = new File(path);
 	    //Creating the directory
@@ -83,7 +83,7 @@ public class BrowserFunction extends TestInMethod {
 	    
 	    //Creating folder for Word Document
 	    //String Wordfilename = cellContent2;
-		String Wordpath = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\" + cellContent2;
+		String Wordpath = "./WordDocs/" + cellContent2;
 		//Creating a File object
 	    File wordfile = new File(Wordpath);
 	    //Creating the directory
@@ -139,7 +139,7 @@ public class BrowserFunction extends TestInMethod {
 			System.out.println(issueDescription);
 			
 			//Taking Screenshot of the test
-			String Screenshotpath = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\Screenshot\\" + cellContent2 + "\\"+ MethodName + ".png";
+			String Screenshotpath = "./Screenshot/" + cellContent2 + "/"+ MethodName + ".png";
 			SSh.screencapture(driver, Screenshotpath);
 			String issueToWord = "Failure: " + issueDescription;
 			//Attaching screenshot in 
@@ -150,7 +150,7 @@ public class BrowserFunction extends TestInMethod {
 			test.log(Status.PASS, MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test Case PASSED", ExtentColor.GREEN));
 		
 			//Taking Screenshot of the test
-			String Screenshotpath = "C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\Screenshot\\" + cellContent2 + "\\"+ MethodName + ".png";
+			String Screenshotpath = "./Screenshot/" + cellContent2 + "/"+ MethodName + ".png";
 			SSh.screencapture(driver, Screenshotpath);
 			
 			//Attaching screenshot in 

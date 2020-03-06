@@ -4,7 +4,6 @@
   <artifactId>Trial</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -12,6 +11,7 @@
     <artifactId>selenium-java</artifactId>
     <version>3.141.59</version>
 </dependency>
+  
   
   	<dependency>
   		<groupId>org.apache.maven.plugins</groupId>
@@ -30,6 +30,14 @@
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
     <version>4.1.1</version>
+</dependency>
+
+<dependency>
+    <groupId>com.google.inject</groupId>
+    <artifactId>guice</artifactId>
+    <version>4.1.0</version>
+    <classifier>no_aop</classifier>
+    <scope>compile</scope>
 </dependency>
 
   	

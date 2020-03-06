@@ -6,21 +6,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
-		<attributes>
-			<attribute name="test" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -34,21 +23,21 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Training/Jar files/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar files/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar files/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar files/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar files/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar files/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar files/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar files/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ggaur/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ggaur/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-excelant-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ggaur/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ggaur/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ggaur/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-scratchpad-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ggaur/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ggaur/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/byte-buddy-1.8.15.jar"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/client-combined-3.141.59-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/guava-25.0-jre.jar"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/okhttp-3.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/okio-1.14.0.jar"/>
-	<classpathentry kind="lib" path="C:/Training/Jar Files/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Users/P10444427/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-4.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/P10444427/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-excelant-4.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/P10444427/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-ooxml-4.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/P10444427/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/P10444427/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/poi-scratchpad-4.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/P10444427/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar"/>
-	<classpathentry kind="lib" path="C:/Users/P10444427/Downloads/poi-bin-4.1.2-20200217/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
