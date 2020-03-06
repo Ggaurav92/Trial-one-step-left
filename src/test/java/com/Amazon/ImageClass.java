@@ -40,6 +40,8 @@ public class ImageClass {
         DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
         Calendar cal = Calendar.getInstance();
         String date = dateFormat.format(cal.getTime());
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        String time = sdf.format(cal.getTime());
 
         // Create a document file
         CustomXWPFDocument document = new CustomXWPFDocument();
@@ -99,7 +101,7 @@ public class ImageClass {
         paragraphThreeRunOne.setFontSize(10);
         paragraphThreeRunOne.setFontFamily("Verdana");
         paragraphThreeRunOne.setColor("000070");
-        paragraphThreeRunOne.setText("5.30 AM IST");
+        paragraphThreeRunOne.setText(time);
         paragraphThreeRunOne.addBreak();
         
         
