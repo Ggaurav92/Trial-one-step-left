@@ -53,6 +53,7 @@ public class TestInMethod {
         System.exit(0);
     }
 
+	@SuppressWarnings("resource")
 	public String GetStepName(String fileName, String cellContent,int i,int j) throws IOException {
         int rownr=0, colnr = j;
         //Opening the excel sheet at path fileName

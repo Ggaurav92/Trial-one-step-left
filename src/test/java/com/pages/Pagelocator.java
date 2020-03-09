@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Pagelocator{
 	//BrowserFunction BrwFn = new BrowserFunction();
 	
+	@SuppressWarnings("unused")
 	private WebDriver driver;
 	
 	public Pagelocator(WebDriver driver) {

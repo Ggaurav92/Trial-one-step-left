@@ -10,17 +10,14 @@ import org.openqa.selenium.WebDriver;
 
 public class ScreenShotClass {
 
+	
+	@SuppressWarnings("unused")
 	private WebDriver driver;
-	
-	
-	
-	
 	
 	//Constructor
 	public ScreenShotClass(WebDriver driver) {
 		this.driver = driver;
 	}
-	
 	
 	
 	//Method to take a screenshot

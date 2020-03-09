@@ -28,11 +28,15 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class BrowserFunction extends TestInMethod {
 
+	
 	public static WebDriver driver;
+	
+	//Initiating ExtentReport
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
 
+	//Instantiating TestIn method to get into Excel
 	TestInMethod ts = new TestInMethod();
 	ImageClass Im = new ImageClass();
 	ScreenShotClass SSh = new ScreenShotClass(driver);
@@ -50,6 +54,7 @@ public class BrowserFunction extends TestInMethod {
 	@BeforeSuite
 	public void initialioseBrowser() {
 
+		//showing the path of ExtentReport
 		htmlReporter = new ExtentHtmlReporter("./Reports/One_Extent.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
@@ -70,6 +75,7 @@ public class BrowserFunction extends TestInMethod {
 		driver = new ChromeDriver();
 	}
 
+	@SuppressWarnings("unused")
 	@BeforeClass
 	public void beforeclass() {
 		System.out.println(this.getClass().getSimpleName());
@@ -83,10 +89,9 @@ public class BrowserFunction extends TestInMethod {
 		String cellContent = this.getClass().getSimpleName();
 		String cellContent1 = cellContent.replace("TC", "");
 		String cellContent2 = cellContent1.replace("o", ".");
-		System.out.println(cellContent2);
+		//System.out.println(cellContent2);
 		
 		//Creating folder for Screenshots
-		String NewFilename = cellContent2;
 		String path = "./Screenshot/" + cellContent2;
 		//Creating a File object
 	    File file = new File(path);
@@ -94,59 +99,47 @@ public class BrowserFunction extends TestInMethod {
 	    boolean bool = file.mkdir();
 	    
 	    //Creating folder for Word Document
-	    //String Wordfilename = cellContent2;
 		String Wordpath = "./WordDocs/" + cellContent2;
 		//Creating a File object
 	    File wordfile = new File(Wordpath);
 	    //Creating the directory
 	    boolean wordbool = wordfile.mkdir();
 	    
-	    
-	  
+	}//End of BeforeClass
 		
-	}
 
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException {
-		
-		
 		
 		// Start of Step and Descrip
 		// Gets the current TestNG class Name
 		String cellContent = this.getClass().getSimpleName();
 		String cellContent1 = cellContent.replace("TC", "");
 		String ClassName = cellContent1.replace("o", ".");
-		System.out.println(ClassName);
+		//System.out.println(ClassName);
 		
-		System.out.println(ClassName);
+		//System.out.println(ClassName);
 		// Searches for the Class name in Excel and return step name
 		String StepName = ts.GetStepName(fileName, ClassName, i, 7);
 		// Searches for the Class name in Excel and returns description of step
 		String StepDescrip = ts.GetStepName(fileName, ClassName, i, 8);
 		// Here we merge the step and description to be put in word
-		String merged = StepName + ": " + StepDescrip;
-		System.out.println(merged);
+		//String merged = StepName + ": " + StepDescrip;
+		//System.out.println(merged);
+		
 		i++;
 
 		System.out.println("In After method");
 		String MethodName = result.getMethod().getConstructorOrMethod().getMethod().getName();
-		System.out.println(MethodName);
+		//System.out.println(MethodName);
 		
 		
-		//String issueDescription = result.getThrowable().getMessage();
-		//issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
-		//test.fail(issueDescription);
 		
-		// First get the Step Name and Description name in here
-
-		// System.out.println(this.getClass().getSimpleName());
-		// test=
-		// extent.createTest(result.getMethod().getConstructorOrMethod().getMethod().getName());
 		if (result.getStatus() == ITestResult.FAILURE) {
 			System.out.println("Test failed entering in Report");
 			String issueDescription = result.getThrowable().getMessage();
 			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
-			
+			//Taking results out of ITestResult and entering them in extent Report
 			test.log(Status.FAIL, MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test case FAILED due to below issues: " + issueDescription,
 					ExtentColor.RED));
 			
@@ -162,6 +155,7 @@ public class BrowserFunction extends TestInMethod {
 		
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			System.out.println("Test passed entering in report");
+			//Taking results out of ITestResult and entering them in extent Report
 			test.log(Status.PASS, MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test Case PASSED", ExtentColor.GREEN));
 		
 			//Taking Screenshot of the test
@@ -169,10 +163,11 @@ public class BrowserFunction extends TestInMethod {
 			SSh.screencapture(driver, Screenshotpath);
 			
 			//Attaching screenshot in 
-			Im.ImageAttachClass(ClassName,MethodName,StepName,StepDescrip,Screenshotpath,"");
+			Im.ImageAttachClass(ClassName,MethodName,StepName,StepDescrip,Screenshotpath,null);
 			
 			
 		} else {
+			//Taking results out of ITestResult and entering them in extent Report
 			test.log(Status.SKIP,
 					MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test Case SKIPPED", ExtentColor.ORANGE));
 			test.skip(result.getThrowable());
@@ -181,7 +176,7 @@ public class BrowserFunction extends TestInMethod {
 		 String fileName = "./WordDocs/" + ClassName +"/"+ MethodName + ".docx";
 		 paths.add(fileName);
 		System.out.println("At end of after method");
-	}
+	}//End of AfterMethod
 	
 	@AfterClass
 	public void afterClass() throws Exception {
@@ -190,7 +185,6 @@ public class BrowserFunction extends TestInMethod {
 		String cellContent1 = cellContent.replace("TC", "");
 		String ClassName = cellContent1.replace("o", ".");
 		
-		//String fileName = "./WordDocs/" + ClassName +"/"+ ClassName + ".docx";
 		String File2Path = "./WordDocs/" + ClassName +"/"+ ClassName + ".docx";
 		FileOutputStream faos = new FileOutputStream(File2Path);
     	WordMerged wm =new WordMerged(faos);
@@ -205,7 +199,7 @@ public class BrowserFunction extends TestInMethod {
         paths.clear();
         
         System.out.println("Sucessfully merged");
-	}
+	}//End of AfterClass
 	
 
 	@AfterSuite
@@ -218,7 +212,7 @@ public class BrowserFunction extends TestInMethod {
 		extent.flush();
 		System.out.println("Extent Flushed");
 		System.out.println("Test Ended");
-		ts.finish();
-	}
+		//ts.finish();
+	}//End of AfterSuite
 
 }

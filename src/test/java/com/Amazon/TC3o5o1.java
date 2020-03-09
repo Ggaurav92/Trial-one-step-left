@@ -11,7 +11,6 @@ public class TC3o5o1 extends BrowserFunction{
   @Test
   public void Step_1() throws InterruptedException {
 	  
-	  //test= extent.createTest("g");
 	  String url = "https://rahulshettyacademy.com/AutomationPractice/";
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -22,10 +21,8 @@ public class TC3o5o1 extends BrowserFunction{
 		driver.findElement(By.xpath("//input[@id='checkBoxOption2']")).click();
 		driver.findElement(By.xpath("//input[@id='checkBoxOption3']")).click();
 		Thread.sleep(2000);
-		System.out.println(check.isSelected());
 		//Assert.assertTrue(check.isSelected());
 		check.click();
-		System.out.println(check.isSelected());
 		//Assert.assertFalse(check.isSelected());
   }
   
@@ -43,10 +40,12 @@ public class TC3o5o1 extends BrowserFunction{
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.id("name")).sendKeys("Gaurav");
-		System.out.println(driver.switchTo().alert().getText());
+		
+		
 		Thread.sleep(2000);
 		driver.findElement(By.id("alertbtn")).click();
 		
+		System.out.println(driver.switchTo().alert().getText());
 		
 		driver.switchTo().alert().accept();
 		
@@ -63,7 +62,7 @@ public void Step_4() throws InterruptedException {
 	Assert.assertEquals(a, b);
 }
 
-@Test
+@Test 
 public void Step_5() throws InterruptedException {
 	String a = "Mango";
 	String b = "Banana";

@@ -19,9 +19,6 @@ public class TC3o4o14 extends BrowserFunction{
 	
 	@Test
   public void Step_1() {
-		
-	
-	  //test= extent.createTest("f");
 	  
 	  driver.get(url);
 	  driver.manage().window().maximize();
@@ -46,8 +43,6 @@ public class TC3o4o14 extends BrowserFunction{
 			if(itemsNeededList.contains(formattedName)) {
 				//click on add to Cart
 				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
-				
-				
 			
 				//Incrementing counter
 				j++;
@@ -56,12 +51,11 @@ public class TC3o4o14 extends BrowserFunction{
 				//Breaking the loop when all the items in the arraylist are added to cart
 				if(j==itemsNeeded.length) {
 					break;
-				}
+				}//End of inner if
 				
-			}
+			}//End of outer if
 
-		}
-
+		}//End of four Loop
 	  
   }// End of Test
   
@@ -74,22 +68,14 @@ public void Step_2() throws InterruptedException {
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
 	Thread.sleep(3000);
-	//driver.findElement(By.xpath("//*[@id='root']//input[@id='fromCity']")).click();
-	System.out.println("Before First Loca");
 	PL.FirstLoca().click();
-	System.out.println("After First Loca");
-	//WebElement source = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='From']"));
 	WebElement source = PL.SecondLoca();
-	//source.click();
-	//source.clear();
+	source.click();
+	source.clear();
 	source.sendKeys("mum");
 	Thread.sleep(3000);
 	source.sendKeys(Keys.ARROW_DOWN);
-	source.sendKeys(Keys.ENTER);
-	//*[@id='root']//input[@id='fromCity']
-	
-	
-	
+	source.sendKeys(Keys.ENTER);	
 	
 }//End of firstTestSecond
 
@@ -97,14 +83,11 @@ public void Step_2() throws InterruptedException {
 public void Step_3() throws InterruptedException {
 	PL = new Pagelocator(BrowserFunction.driver);
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	//driver.findElement(By.xpath("//*[@id='root']//input[@id='toCity']//parent ::label/span")).click();
 	PL.ThirdLoca().click();
-	//WebElement destination = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='To']"));
 
 	WebElement destination = PL.FourthLoca();
-	
-	//destination.click();
-	//destination.clear();
+	destination.click();
+	destination.clear();
 	destination.sendKeys("del");
 	Thread.sleep(3000);
 	destination.sendKeys(Keys.ARROW_DOWN);
@@ -115,4 +98,4 @@ public void Step_3() throws InterruptedException {
   
   
   
-}
+}// End of TC3o4o14 Class

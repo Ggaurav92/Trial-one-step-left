@@ -20,22 +20,10 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 public class ImageClass {
 
 	
-	/*
-	public static void main(String[] args) throws IOException{
-		ImageClass img = new ImageClass();
-		img.ImageAttachClass();
-	}
-	*/
 	
-	
-	
+	@SuppressWarnings("resource")
 	public void ImageAttachClass(String Classname, String FileNme, String StepName, String StepDescrp, String ImagePath, String FailureDescrip) throws FileNotFoundException {
     	
-    	//String StepName = "Step 1";
-    	//String ImagePath = "C:\\Users\\P10444427\\Downloads\\pngtree-light-effect-border-png-image_3552885.jpg";
-    	//String StepDescrp = "Click on an Element"; 
-    	//String FileNme = "3.4.14";
-    	//String FailureDescrip = "This Test Fails";
     	
         DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
         Calendar cal = Calendar.getInstance();
@@ -44,11 +32,25 @@ public class ImageClass {
         String time = sdf.format(cal.getTime());
 
         // Create a document file
-        CustomXWPFDocument document = new CustomXWPFDocument();
+		CustomXWPFDocument document = new CustomXWPFDocument();
 
 
+     // Create a para 3 - Failure Description
+        XWPFParagraph paragraphZero = document.createParagraph();
+        paragraphZero.setAlignment(ParagraphAlignment.LEFT);
+        XWPFRun paragraphZeroRunOne = paragraphZero.createRun();
+        paragraphZeroRunOne.addBreak();
+        paragraphZeroRunOne.setBold(true);
+        paragraphZeroRunOne.setUnderline(UnderlinePatterns.SINGLE);
+        paragraphZeroRunOne.setFontSize(10);
+        paragraphZeroRunOne.setFontFamily("Verdana");
+        paragraphZeroRunOne.setColor("000070");
+        paragraphZeroRunOne.setText(Classname);
+        
+        
+        
         // insert doc details
-        // Create a para -1
+        // Create a para -1 - Step Name and Step Description
         XWPFParagraph paragraphOne = document.createParagraph();
         paragraphOne.setAlignment(ParagraphAlignment.LEFT);
         XWPFRun paragraphOneRunOne = paragraphOne.createRun();
@@ -63,51 +65,31 @@ public class ImageClass {
         XWPFParagraph paragraphFour = document.createParagraph();
         paragraphFour.setAlignment(ParagraphAlignment.LEFT);
         XWPFRun paragraphFourRunOne = paragraphFour.createRun();
-        //paragraphFourRunOne.addBreak();
         paragraphFourRunOne.setBold(true);
-        //paragraphFourRunOne.setUnderline(UnderlinePatterns.SINGLE);
         paragraphFourRunOne.setFontSize(10);
         paragraphFourRunOne.setFontFamily("Verdana");
         paragraphFourRunOne.setColor("000070");
         paragraphFourRunOne.setText(FailureDescrip);
      
-     // Create a para 3 - Failure Description
-        XWPFParagraph paragraphFive = document.createParagraph();
-        paragraphFive.setAlignment(ParagraphAlignment.LEFT);
-        XWPFRun paragraphFiveRunOne = paragraphFive.createRun();
-        paragraphFiveRunOne.addBreak();
-        paragraphFourRunOne.setBold(true);
-        paragraphFourRunOne.setUnderline(UnderlinePatterns.SINGLE);
-        paragraphFourRunOne.setFontSize(10);
-        paragraphFourRunOne.setFontFamily("Verdana");
-        paragraphFourRunOne.setColor("000070");
-        paragraphFourRunOne.setText("This can be used as extra comment");
         
         // Createa a para -4 - DateStamp
         XWPFParagraph paragraphTwo = document.createParagraph();
-        paragraphTwo.setAlignment(ParagraphAlignment.LEFT);
+        paragraphTwo.setAlignment(ParagraphAlignment.RIGHT);
         XWPFRun paragraphTwoRunOne = paragraphTwo.createRun();
-        paragraphTwoRunOne.setFontSize(10);
+        paragraphTwoRunOne.setFontSize(8);
         paragraphTwoRunOne.setFontFamily("Verdana");
         paragraphTwoRunOne.setColor("000070");
         paragraphTwoRunOne.setText(date);
-        paragraphTwoRunOne.addBreak();
-
 
         // Createa a para -5  - TimeStamp
         XWPFParagraph paragraphThree = document.createParagraph();
-        paragraphThree.setAlignment(ParagraphAlignment.LEFT);
+        paragraphThree.setAlignment(ParagraphAlignment.RIGHT);
         XWPFRun paragraphThreeRunOne = paragraphThree.createRun();
-        paragraphThreeRunOne.setFontSize(10);
+        paragraphThreeRunOne.setFontSize(8);
         paragraphThreeRunOne.setFontFamily("Verdana");
         paragraphThreeRunOne.setColor("000070");
         paragraphThreeRunOne.setText(time);
-        paragraphThreeRunOne.addBreak();
-        
-        
-     
-     
-        
+           
         
         
         // Adding a file
@@ -123,15 +105,13 @@ public class ImageClass {
                     new FileInputStream(new File(ImagePath)),
                     imgFormat);
             System.out.println("4" + blipId);
-            System.out.println(document
-                    .getNextPicNameNumber(imgFormat));
+            //System.out.println(document.getNextPicNameNumber(imgFormat));
             document.createPicture(blipId,
                     document.getNextPicNameNumber(imgFormat),
                     600, 400);
-            System.out.println("5");
+            //System.out.println("5");
 
         } catch (InvalidFormatException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         
@@ -140,7 +120,6 @@ public class ImageClass {
         
         FileOutputStream outStream = null;
         try {
-            //double x = Math.random();
             String fileName = "./WordDocs/" + Classname +"/"+ FileNme + ".docx";
             System.out.println(fileName);
             outStream = new FileOutputStream(fileName);

@@ -1,6 +1,4 @@
 package com.Amazon;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -14,38 +12,7 @@ public class WordMerged {
     private final OutputStream result;
     private final List<InputStream> inputs;
     private XWPFDocument first;
-    
-    /*
-    public static void main(String[] args) throws Exception {
-
-        FileOutputStream faos = new FileOutputStream("C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\3.4.14\\result.docx");
         
-        ArrayList<String> paths = new ArrayList<String>();
-    	paths.add("C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\3.4.14\\Step_1.docx");
-    	paths.add("C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\3.4.14\\Step_2.docx");
-    	paths.add("C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\3.4.14\\Step_3.docx");
-        
-        WordMerged wm = new WordMerged(faos);
-
-        for(String InpStrm : paths) {
-        wm.add(new FileInputStream(InpStrm));	
-        }
-        
-        //wm.add( new FileInputStream("C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\3.4.14\\Step_1.docx") );
-        //wm.add( new FileInputStream("C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\3.4.14\\Step_2.docx") );
-        //wm.add( new FileInputStream("C:\\Users\\P10444427\\Desktop\\Projects from GIT\\TrialFrame-master\\WordDocs\\3.4.14\\Step_3.docx") );
-        
-        
-        wm.doMerge();
-        wm.close();
-
-    } 
-    
-    */
-    
-    
-    
-
     public WordMerged(OutputStream result) {
         this.result = result;
         inputs = new ArrayList<InputStream>();

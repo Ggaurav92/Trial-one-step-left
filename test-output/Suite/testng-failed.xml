@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Amazon.SecondTestClass">
+      <class name="com.Amazon.TC3o5o1">
         <methods>
+          <include name="afterClass"/>
+          <include name="Step_5"/>
+          <include name="Step_4"/>
           <include name="initialioseBrowser"/>
-          <include name="SecondTest"/>
           <include name="getResult"/>
           <include name="closeBrowser"/>
           <include name="beforeclass"/>
         </methods>
-      </class> <!-- com.Amazon.SecondTestClass -->
+      </class> <!-- com.Amazon.TC3o5o1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
