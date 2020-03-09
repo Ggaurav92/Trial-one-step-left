@@ -50,5 +50,6 @@
 	<classpathentry kind="lib" path="C:/Training/Jar Files/Poi Jar Files/poi-ooxml-schemas-4.1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Training/Jar Files/Poi Jar Files/poi-scratchpad-4.1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Training/Jar Files/Poi Jar Files/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Training/Jar Files/Fullpage Screeshot Jar/ashot-1.5.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

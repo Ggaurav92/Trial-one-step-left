@@ -1,121 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="2" total="10" passed="6">
+<testng-results skipped="0" failed="3" ignored="2" total="10" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47500" started-at="2020-03-09T08:39:47 GMT" finished-at="2020-03-09T08:40:34 GMT">
+  <suite name="Suite" duration-ms="97432" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T13:01:20 GMT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="47500" started-at="2020-03-09T08:39:47 GMT" finished-at="2020-03-09T08:40:34 GMT">
-      <class name="com.Amazon.TC3o4o14">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="beforeclass" is-config="true" duration-ms="3" started-at="2020-03-09T08:40:09 GMT" finished-at="2020-03-09T08:40:09 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="Step_1" duration-ms="3858" started-at="2020-03-09T08:40:09 GMT" finished-at="2020-03-09T08:40:13 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Step_1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="getResult" is-config="true" duration-ms="1023" started-at="2020-03-09T08:40:13 GMT" finished-at="2020-03-09T08:40:14 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_1 status=SUCCESS method=TC3o4o14.Step_1()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="Step_2" duration-ms="13905" started-at="2020-03-09T08:40:14 GMT" finished-at="2020-03-09T08:40:28 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Step_2 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="getResult" is-config="true" duration-ms="784" started-at="2020-03-09T08:40:28 GMT" finished-at="2020-03-09T08:40:29 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_2 status=SUCCESS method=TC3o4o14.Step_2()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Step_3()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="Step_3" duration-ms="4128" started-at="2020-03-09T08:40:29 GMT" finished-at="2020-03-09T08:40:33 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Step_3 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="getResult" is-config="true" duration-ms="824" started-at="2020-03-09T08:40:33 GMT" finished-at="2020-03-09T08:40:34 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_3 status=SUCCESS method=TC3o4o14.Step_3()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Amazon.TC3o4o14@7a187f14]" name="afterClass" is-config="true" duration-ms="306" started-at="2020-03-09T08:40:34 GMT" finished-at="2020-03-09T08:40:34 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.Amazon.TC3o4o14 -->
-      <class name="com.Amazon.TC3o5o1">
-        <test-method status="PASS" signature="initialioseBrowser()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="initialioseBrowser" is-config="true" duration-ms="5530" started-at="2020-03-09T08:39:41 GMT" finished-at="2020-03-09T08:39:47 GMT">
+    <test name="Test" duration-ms="97432" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T13:01:20 GMT">
+      <class name="com.Tests.TC3o5o1">
+        <test-method status="PASS" signature="initialioseBrowser()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="initialioseBrowser" is-config="true" duration-ms="4658" started-at="2020-03-09T12:59:38 GMT" finished-at="2020-03-09T12:59:43 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialioseBrowser -->
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="beforeclass" is-config="true" duration-ms="16" started-at="2020-03-09T08:39:47 GMT" finished-at="2020-03-09T08:39:47 GMT">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="beforeclass" is-config="true" duration-ms="10" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T12:59:43 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="Step_1" duration-ms="7826" started-at="2020-03-09T08:39:47 GMT" finished-at="2020-03-09T08:39:55 GMT">
+        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_1" duration-ms="8050" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T12:59:51 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="getResult" is-config="true" duration-ms="3851" started-at="2020-03-09T08:39:55 GMT" finished-at="2020-03-09T08:39:59 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="10752" started-at="2020-03-09T12:59:51 GMT" finished-at="2020-03-09T13:00:02 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_1 status=SUCCESS method=TC3o5o1.Step_1()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c] output={null}]]]>
+                <![CDATA[[TestResult name=Step_1 status=SUCCESS method=TC3o5o1.Step_1()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="Step_2" duration-ms="3" started-at="2020-03-09T08:39:59 GMT" finished-at="2020-03-09T08:39:59 GMT">
+        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_2" duration-ms="3" started-at="2020-03-09T13:00:02 GMT" finished-at="2020-03-09T13:00:02 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_2 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="getResult" is-config="true" duration-ms="1302" started-at="2020-03-09T08:39:59 GMT" finished-at="2020-03-09T08:40:00 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="7403" started-at="2020-03-09T13:00:02 GMT" finished-at="2020-03-09T13:00:09 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_2 status=SUCCESS method=TC3o5o1.Step_2()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c] output={null}]]]>
+                <![CDATA[[TestResult name=Step_2 status=SUCCESS method=TC3o5o1.Step_2()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Step_3()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="Step_3" duration-ms="6563" started-at="2020-03-09T08:40:00 GMT" finished-at="2020-03-09T08:40:06 GMT">
+        <test-method status="PASS" signature="Step_3()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_3" duration-ms="6537" started-at="2020-03-09T13:00:09 GMT" finished-at="2020-03-09T13:00:16 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_3 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="getResult" is-config="true" duration-ms="870" started-at="2020-03-09T08:40:06 GMT" finished-at="2020-03-09T08:40:07 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="6945" started-at="2020-03-09T13:00:16 GMT" finished-at="2020-03-09T13:00:23 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_3 status=SUCCESS method=TC3o5o1.Step_3()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c] output={null}]]]>
+                <![CDATA[[TestResult name=Step_3 status=SUCCESS method=TC3o5o1.Step_3()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Step_4()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="Step_4" duration-ms="9" started-at="2020-03-09T08:40:07 GMT" finished-at="2020-03-09T08:40:07 GMT">
+        <test-method status="FAIL" signature="Step_4()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_4" duration-ms="6" started-at="2020-03-09T13:00:23 GMT" finished-at="2020-03-09T13:00:23 GMT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Orange] but found [Apple]]]>
@@ -127,7 +72,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at com.Amazon.TC3o5o1.Step_4(TC3o5o1.java:62)
+at com.Tests.TC3o5o1.Step_4(TC3o5o1.java:65)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -162,18 +107,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_4 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="getResult" is-config="true" duration-ms="801" started-at="2020-03-09T08:40:07 GMT" finished-at="2020-03-09T08:40:08 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="6472" started-at="2020-03-09T13:00:23 GMT" finished-at="2020-03-09T13:00:29 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_4 status=FAILURE method=TC3o5o1.Step_4()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c] output={null}]]]>
+                <![CDATA[[TestResult name=Step_4 status=FAILURE method=TC3o5o1.Step_4()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Step_5()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="Step_5" duration-ms="2" started-at="2020-03-09T08:40:08 GMT" finished-at="2020-03-09T08:40:08 GMT">
+        <test-method status="FAIL" signature="Step_5()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_5" duration-ms="6" started-at="2020-03-09T13:00:29 GMT" finished-at="2020-03-09T13:00:29 GMT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Banana] but found [Mango]]]>
@@ -185,7 +130,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at com.Amazon.TC3o5o1.Step_5(TC3o5o1.java:69)
+at com.Tests.TC3o5o1.Step_5(TC3o5o1.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -220,26 +165,149 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_5 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="getResult" is-config="true" duration-ms="883" started-at="2020-03-09T08:40:08 GMT" finished-at="2020-03-09T08:40:09 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="6395" started-at="2020-03-09T13:00:29 GMT" finished-at="2020-03-09T13:00:36 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_5 status=FAILURE method=TC3o5o1.Step_5()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c] output={null}]]]>
+                <![CDATA[[TestResult name=Step_5 status=FAILURE method=TC3o5o1.Step_5()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="afterClass" is-config="true" duration-ms="416" started-at="2020-03-09T08:40:09 GMT" finished-at="2020-03-09T08:40:09 GMT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="afterClass" is-config="true" duration-ms="303" started-at="2020-03-09T13:00:36 GMT" finished-at="2020-03-09T13:00:36 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Amazon.TC3o5o1@307f6b8c]" name="closeBrowser" is-config="true" duration-ms="3027" started-at="2020-03-09T08:40:34 GMT" finished-at="2020-03-09T08:40:37 GMT">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="closeBrowser" is-config="true" duration-ms="2461" started-at="2020-03-09T13:01:20 GMT" finished-at="2020-03-09T13:01:23 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Amazon.TC3o5o1 -->
+      </class> <!-- com.Tests.TC3o5o1 -->
+      <class name="com.Tests.TC3o4o14">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="beforeclass" is-config="true" duration-ms="3" started-at="2020-03-09T13:00:36 GMT" finished-at="2020-03-09T13:00:36 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_1" duration-ms="3488" started-at="2020-03-09T13:00:36 GMT" finished-at="2020-03-09T13:00:39 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="9536" started-at="2020-03-09T13:00:39 GMT" finished-at="2020-03-09T13:00:49 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_1 status=SUCCESS method=TC3o4o14.Step_1()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_2" duration-ms="13456" started-at="2020-03-09T13:00:49 GMT" finished-at="2020-03-09T13:01:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_2 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="7145" started-at="2020-03-09T13:01:02 GMT" finished-at="2020-03-09T13:01:09 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_2 status=SUCCESS method=TC3o4o14.Step_2()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="Step_3()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_3" duration-ms="4147" started-at="2020-03-09T13:01:09 GMT" finished-at="2020-03-09T13:01:14 GMT">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (591, -1777)
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\P10444~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cccb0258e643ed603d8cfd57a7a1236e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (591, -1777)
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\P10444~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cccb0258e643ed603d8cfd57a7a1236e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.Tests.TC3o4o14.Step_3(TC3o4o14.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_3 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="6509" started-at="2020-03-09T13:01:14 GMT" finished-at="2020-03-09T13:01:20 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_3 status=FAILURE method=TC3o4o14.Step_3()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="afterClass" is-config="true" duration-ms="132" started-at="2020-03-09T13:01:20 GMT" finished-at="2020-03-09T13:01:20 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.Tests.TC3o4o14 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

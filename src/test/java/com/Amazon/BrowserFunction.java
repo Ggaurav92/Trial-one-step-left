@@ -39,6 +39,8 @@ public class BrowserFunction extends TestInMethod {
 	//Instantiating TestIn method to get into Excel
 	TestInMethod ts = new TestInMethod();
 	ImageClass Im = new ImageClass();
+	
+	//Initializing for taking screenshot
 	ScreenShotClass SSh = new ScreenShotClass(driver);
 	
 	// path of TestScript excel file
@@ -148,7 +150,13 @@ public class BrowserFunction extends TestInMethod {
 			
 			//Taking Screenshot of the test
 			String Screenshotpath = "./Screenshot/" + ClassName + "/"+ MethodName + ".png";
-			SSh.screencapture(driver, Screenshotpath);
+			
+			//Current page screenshot
+			//SSh.screencapture(driver, Screenshotpath);
+			
+			//full page screenshot
+			SSh.fullPgScreenCapture(driver, Screenshotpath);
+			
 			String issueToWord = "Failure: " + issueDescription;
 			//Attaching screenshot in 
 			Im.ImageAttachClass(ClassName,MethodName,StepName,StepDescrip,Screenshotpath,issueToWord);
@@ -160,7 +168,13 @@ public class BrowserFunction extends TestInMethod {
 		
 			//Taking Screenshot of the test
 			String Screenshotpath = "./Screenshot/" + ClassName + "/"+ MethodName + ".png";
+			
+			
+			//Current page screenshot
 			SSh.screencapture(driver, Screenshotpath);
+			
+			//full page screenshot
+			SSh.fullPgScreenCapture(driver, Screenshotpath);
 			
 			//Attaching screenshot in 
 			Im.ImageAttachClass(ClassName,MethodName,StepName,StepDescrip,Screenshotpath,null);

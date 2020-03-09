@@ -1,6 +1,9 @@
-package com.Amazon;
+package com.Tests;
 
 import org.testng.annotations.Test;
+
+import com.Amazon.BrowserFunction;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;

@@ -3,18 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Amazon.TC3o4o14">
+      <class name="com.Tests.TC3o4o14">
         <methods>
           <include name="afterClass"/>
           <include name="initialioseBrowser"/>
-          <include name="Step_3"/>
-          <include name="beforeMethod"/>
           <include name="getResult"/>
           <include name="closeBrowser"/>
-          <include name="Step_2"/>
           <include name="beforeclass"/>
+          <include name="Step_3"/>
         </methods>
-      </class> <!-- com.Amazon.TC3o4o14 -->
+      </class> <!-- com.Tests.TC3o4o14 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

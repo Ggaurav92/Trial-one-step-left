@@ -3,17 +3,27 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Amazon.TC3o5o1">
+      <class name="com.Tests.TC3o4o14">
         <methods>
           <include name="afterClass"/>
-          <include name="Step_5"/>
-          <include name="Step_4"/>
           <include name="initialioseBrowser"/>
           <include name="getResult"/>
           <include name="closeBrowser"/>
           <include name="beforeclass"/>
+          <include name="Step_3"/>
         </methods>
-      </class> <!-- com.Amazon.TC3o5o1 -->
+      </class> <!-- com.Tests.TC3o4o14 -->
+      <class name="com.Tests.TC3o5o1">
+        <methods>
+          <include name="Step_5"/>
+          <include name="afterClass"/>
+          <include name="initialioseBrowser"/>
+          <include name="Step_4"/>
+          <include name="getResult"/>
+          <include name="closeBrowser"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- com.Tests.TC3o5o1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

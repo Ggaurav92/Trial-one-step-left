@@ -1,5 +1,6 @@
-package com.Amazon;
+package com.Tests;
 
+import com.Amazon.BrowserFunction;
 import com.pages.*;
 
 import org.testng.annotations.Test;
@@ -24,8 +25,10 @@ public class TC3o4o14 extends BrowserFunction{
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
-		
+	  
 		int j = 0;
+		
+		
 		for (int i = 0; i < products.size(); i++) {
 			
 			String name  = products.get(i).getText();
@@ -83,8 +86,9 @@ public void Step_2() throws InterruptedException {
 public void Step_3() throws InterruptedException {
 	PL = new Pagelocator(BrowserFunction.driver);
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+	Thread.sleep(3000);
 	PL.ThirdLoca().click();
-
 	WebElement destination = PL.FourthLoca();
 	destination.click();
 	destination.clear();
@@ -93,9 +97,6 @@ public void Step_3() throws InterruptedException {
 	destination.sendKeys(Keys.ARROW_DOWN);
 	destination.sendKeys(Keys.ENTER);
 }// End of firstTestThird
-
-	
-  
   
   
 }// End of TC3o4o14 Class
