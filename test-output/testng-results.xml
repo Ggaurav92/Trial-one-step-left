@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="3" ignored="2" total="10" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="97432" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T13:01:20 GMT">
+  <suite name="Suite" duration-ms="122179" started-at="2020-03-12T07:23:17 GMT" finished-at="2020-03-12T07:25:19 GMT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="97432" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T13:01:20 GMT">
+    <test name="Test" duration-ms="122179" started-at="2020-03-12T07:23:17 GMT" finished-at="2020-03-12T07:25:19 GMT">
       <class name="com.Tests.TC3o5o1">
-        <test-method status="PASS" signature="initialioseBrowser()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="initialioseBrowser" is-config="true" duration-ms="4658" started-at="2020-03-09T12:59:38 GMT" finished-at="2020-03-09T12:59:43 GMT">
+        <test-method status="PASS" signature="initialioseBrowser()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="initialioseBrowser" is-config="true" duration-ms="7456" started-at="2020-03-12T07:23:10 GMT" finished-at="2020-03-12T07:23:17 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialioseBrowser -->
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="beforeclass" is-config="true" duration-ms="10" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T12:59:43 GMT">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="beforeclass" is-config="true" duration-ms="28" started-at="2020-03-12T07:23:17 GMT" finished-at="2020-03-12T07:23:17 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_1" duration-ms="8050" started-at="2020-03-09T12:59:43 GMT" finished-at="2020-03-09T12:59:51 GMT">
+        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_1" duration-ms="11571" started-at="2020-03-12T07:23:17 GMT" finished-at="2020-03-12T07:23:29 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="10752" started-at="2020-03-09T12:59:51 GMT" finished-at="2020-03-09T13:00:02 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="24621" started-at="2020-03-12T07:23:29 GMT" finished-at="2020-03-12T07:23:53 GMT">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_2" duration-ms="3" started-at="2020-03-09T13:00:02 GMT" finished-at="2020-03-09T13:00:02 GMT">
+        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_2" duration-ms="2" started-at="2020-03-12T07:23:53 GMT" finished-at="2020-03-12T07:23:53 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_2 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="7403" started-at="2020-03-09T13:00:02 GMT" finished-at="2020-03-09T13:00:09 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="7913" started-at="2020-03-12T07:23:53 GMT" finished-at="2020-03-12T07:24:01 GMT">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Step_3()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_3" duration-ms="6537" started-at="2020-03-09T13:00:09 GMT" finished-at="2020-03-09T13:00:16 GMT">
+        <test-method status="PASS" signature="Step_3()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_3" duration-ms="7863" started-at="2020-03-12T07:24:01 GMT" finished-at="2020-03-12T07:24:09 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_3 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="6945" started-at="2020-03-09T13:00:16 GMT" finished-at="2020-03-09T13:00:23 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="7054" started-at="2020-03-12T07:24:09 GMT" finished-at="2020-03-12T07:24:16 GMT">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Step_4()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_4" duration-ms="6" started-at="2020-03-09T13:00:23 GMT" finished-at="2020-03-09T13:00:23 GMT">
+        <test-method status="FAIL" signature="Step_4()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_4" duration-ms="6" started-at="2020-03-12T07:24:16 GMT" finished-at="2020-03-12T07:24:16 GMT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Orange] but found [Apple]]]>
@@ -107,7 +107,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_4 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="6472" started-at="2020-03-09T13:00:23 GMT" finished-at="2020-03-09T13:00:29 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="7006" started-at="2020-03-12T07:24:16 GMT" finished-at="2020-03-12T07:24:23 GMT">
           <params>
             <param index="0">
               <value>
@@ -118,7 +118,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Step_5()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_5" duration-ms="6" started-at="2020-03-09T13:00:29 GMT" finished-at="2020-03-09T13:00:29 GMT">
+        <test-method status="FAIL" signature="Step_5()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="Step_5" duration-ms="2" started-at="2020-03-12T07:24:23 GMT" finished-at="2020-03-12T07:24:23 GMT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Banana] but found [Mango]]]>
@@ -165,7 +165,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_5 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="6395" started-at="2020-03-09T13:00:29 GMT" finished-at="2020-03-09T13:00:36 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="getResult" is-config="true" duration-ms="6632" started-at="2020-03-12T07:24:23 GMT" finished-at="2020-03-12T07:24:30 GMT">
           <params>
             <param index="0">
               <value>
@@ -176,25 +176,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="afterClass" is-config="true" duration-ms="303" started-at="2020-03-09T13:00:36 GMT" finished-at="2020-03-09T13:00:36 GMT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="afterClass" is-config="true" duration-ms="757" started-at="2020-03-12T07:24:30 GMT" finished-at="2020-03-12T07:24:31 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="closeBrowser" is-config="true" duration-ms="2461" started-at="2020-03-09T13:01:20 GMT" finished-at="2020-03-09T13:01:23 GMT">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Tests.TC3o5o1@6f195bc3]" name="closeBrowser" is-config="true" duration-ms="3884" started-at="2020-03-12T07:25:19 GMT" finished-at="2020-03-12T07:25:23 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.Tests.TC3o5o1 -->
       <class name="com.Tests.TC3o4o14">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="beforeclass" is-config="true" duration-ms="3" started-at="2020-03-09T13:00:36 GMT" finished-at="2020-03-09T13:00:36 GMT">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="beforeclass" is-config="true" duration-ms="3" started-at="2020-03-12T07:24:31 GMT" finished-at="2020-03-12T07:24:31 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_1" duration-ms="3488" started-at="2020-03-09T13:00:36 GMT" finished-at="2020-03-09T13:00:39 GMT">
+        <test-method status="PASS" signature="Step_1()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_1" duration-ms="5463" started-at="2020-03-12T07:24:31 GMT" finished-at="2020-03-12T07:24:36 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="9536" started-at="2020-03-09T13:00:39 GMT" finished-at="2020-03-09T13:00:49 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="9773" started-at="2020-03-12T07:24:36 GMT" finished-at="2020-03-12T07:24:46 GMT">
           <params>
             <param index="0">
               <value>
@@ -205,11 +205,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_2" duration-ms="13456" started-at="2020-03-09T13:00:49 GMT" finished-at="2020-03-09T13:01:02 GMT">
+        <test-method status="PASS" signature="Step_2()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_2" duration-ms="14566" started-at="2020-03-12T07:24:46 GMT" finished-at="2020-03-12T07:25:00 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_2 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="7145" started-at="2020-03-09T13:01:02 GMT" finished-at="2020-03-09T13:01:09 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="7386" started-at="2020-03-12T07:25:00 GMT" finished-at="2020-03-12T07:25:08 GMT">
           <params>
             <param index="0">
               <value>
@@ -220,25 +220,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Step_3()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_3" duration-ms="4147" started-at="2020-03-09T13:01:09 GMT" finished-at="2020-03-09T13:01:14 GMT">
+        <test-method status="FAIL" signature="Step_3()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="Step_3" duration-ms="4192" started-at="2020-03-12T07:25:08 GMT" finished-at="2020-03-12T07:25:12 GMT">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (591, -1777)
+              <![CDATA[element click intercepted: Element is not clickable at point (591, -1779)
   (Session info: chrome=80.0.3987.132)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\P10444~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cccb0258e643ed603d8cfd57a7a1236e]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\P10444~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 007616ffacd22f7fc0f7df6231ec66a9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (591, -1777)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (591, -1779)
   (Session info: chrome=80.0.3987.132)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'PDCDT01GY4ZVQ1', ip: '192.168.2.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\P10444~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cccb0258e643ed603d8cfd57a7a1236e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\P10444~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 007616ffacd22f7fc0f7df6231ec66a9
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -292,7 +292,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_3 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="6509" started-at="2020-03-09T13:01:14 GMT" finished-at="2020-03-09T13:01:20 GMT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="getResult" is-config="true" duration-ms="7098" started-at="2020-03-12T07:25:12 GMT" finished-at="2020-03-12T07:25:19 GMT">
           <params>
             <param index="0">
               <value>
@@ -303,7 +303,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="afterClass" is-config="true" duration-ms="132" started-at="2020-03-09T13:01:20 GMT" finished-at="2020-03-09T13:01:20 GMT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Tests.TC3o4o14@51e2adc7]" name="afterClass" is-config="true" duration-ms="115" started-at="2020-03-12T07:25:19 GMT" finished-at="2020-03-12T07:25:19 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

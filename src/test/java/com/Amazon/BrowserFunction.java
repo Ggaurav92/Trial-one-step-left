@@ -38,7 +38,12 @@ public class BrowserFunction extends TestInMethod {
 
 	//Instantiating TestIn method to get into Excel
 	TestInMethod ts = new TestInMethod();
+	
+	//Creating instance of ImageClass to put image in word
 	ImageClass Im = new ImageClass();
+	
+	//Creating instance of GivingData class
+	GivingData gd = new GivingData();
 	
 	//Initializing for taking screenshot
 	ScreenShotClass SSh = new ScreenShotClass(driver);
@@ -88,20 +93,20 @@ public class BrowserFunction extends TestInMethod {
 		i = 0;
 		
 		
+		// Gets the current TestNG class Name
 		String cellContent = this.getClass().getSimpleName();
-		String cellContent1 = cellContent.replace("TC", "");
-		String cellContent2 = cellContent1.replace("o", ".");
-		//System.out.println(cellContent2);
+		//Replacing 'o' with '.' and remove TC in ClassName
+		String ClassName = gd.currentClassName(cellContent); //Replacing 'o' with '.' and remove TC in ClassName
 		
 		//Creating folder for Screenshots
-		String path = "./Screenshot/" + cellContent2;
+		String path = "./Screenshot/" + ClassName;
 		//Creating a File object
 	    File file = new File(path);
 	    //Creating the directory
 	    boolean bool = file.mkdir();
 	    
 	    //Creating folder for Word Document
-		String Wordpath = "./WordDocs/" + cellContent2;
+		String Wordpath = "./WordDocs/" + ClassName;
 		//Creating a File object
 	    File wordfile = new File(Wordpath);
 	    //Creating the directory
@@ -113,12 +118,11 @@ public class BrowserFunction extends TestInMethod {
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException {
 		
-		// Start of Step and Descrip
+		// Start of Step and Description
 		// Gets the current TestNG class Name
 		String cellContent = this.getClass().getSimpleName();
-		String cellContent1 = cellContent.replace("TC", "");
-		String ClassName = cellContent1.replace("o", ".");
-		//System.out.println(ClassName);
+		//Replacing 'o' with '.' and remove TC in ClassName
+		String ClassName = gd.currentClassName(cellContent);
 		
 		//System.out.println(ClassName);
 		// Searches for the Class name in Excel and return step name
@@ -129,6 +133,7 @@ public class BrowserFunction extends TestInMethod {
 		//String merged = StepName + ": " + StepDescrip;
 		//System.out.println(merged);
 		
+		//increase the iterator by 1
 		i++;
 
 		System.out.println("In After method");
@@ -144,9 +149,6 @@ public class BrowserFunction extends TestInMethod {
 			//Taking results out of ITestResult and entering them in extent Report
 			test.log(Status.FAIL, MarkupHelper.createLabel(StepName + " : "+ StepDescrip + " Test case FAILED due to below issues: " + issueDescription,
 					ExtentColor.RED));
-			
-			//test.fail(issueDescription);
-			System.out.println(issueDescription);
 			
 			//Taking Screenshot of the test
 			String Screenshotpath = "./Screenshot/" + ClassName + "/"+ MethodName + ".png";
@@ -169,7 +171,6 @@ public class BrowserFunction extends TestInMethod {
 			//Taking Screenshot of the test
 			String Screenshotpath = "./Screenshot/" + ClassName + "/"+ MethodName + ".png";
 			
-			
 			//Current page screenshot
 			SSh.screencapture(driver, Screenshotpath);
 			
@@ -188,6 +189,8 @@ public class BrowserFunction extends TestInMethod {
 		}
 		
 		 String fileName = "./WordDocs/" + ClassName +"/"+ MethodName + ".docx";
+		 
+		 //the path of the word doc for current step to paths List
 		 paths.add(fileName);
 		System.out.println("At end of after method");
 	}//End of AfterMethod
@@ -196,8 +199,8 @@ public class BrowserFunction extends TestInMethod {
 	public void afterClass() throws Exception {
 		// Gets the current TestNG class Name
 		String cellContent = this.getClass().getSimpleName();
-		String cellContent1 = cellContent.replace("TC", "");
-		String ClassName = cellContent1.replace("o", ".");
+		//Replacing 'o' with '.' and remove TC in ClassName
+		String ClassName = gd.currentClassName(cellContent);
 		
 		String File2Path = "./WordDocs/" + ClassName +"/"+ ClassName + ".docx";
 		FileOutputStream faos = new FileOutputStream(File2Path);
